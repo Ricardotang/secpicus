@@ -1,0 +1,26 @@
+{
+"baillie": {
+"id": "1088875",
+"base_info": "baillie base info",
+"total_value_img": "static/baillie/total_value_img.png",
+"top_10_img": "https://raw.githubusercontent.com/Ricardotang/openmindIA011/main/w4top10_img.png",
+"top_10_table": "static/baillie/top10_table.png",
+"gics_img": "static/baillie/gics_img.png",
+"gics_table": "static/baillie/gics_table.png",
+"percent_img": "static/baillie/percent_img.png",
+"top5_issuer_img": "static/baillie/top5_issuer_img.png",
+"top5_issuer_table": "static/baillie/top5_issuer_table.png"
+},
+"1088875": {
+    "id": "1088875",
+    "base_info": "baillie base info",
+    "total_value_img": "static/baillie/total_value_img.png",
+    "top_10_img": "https://raw.githubusercontent.com/Ricardotang/openmindIA011/main/w4top10_img.png",
+    "top_10_table": "static/baillie/top10_table.png",
+    "gics_img": "static/baillie/gics_img.png",
+    "gics_table": "static/baillie/gics_table.png",
+    "percent_img": "static/baillie/percent_img.png",
+    "top5_issuer_img": "static/baillie/top5_issuer_img.png",
+    "top5_issuer_table": "static/baillie/top5_issuer_table.png"
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{manager_name}} Institutional Investor profile - Secpicus</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <header>
+        <img src="static/logo.png" alt="Logo" id="logo">
+    </header>
+
+    <div class="module-container">
+        <div class="module">
+            <p>Institutional Investor basic information.</p>
+        </div>
+        <!-- Repeat for each image module -->
+        <div class="module">
+            <img src="{{total_value_img}}" alt="total value trend" class="module-img">
+            <p class="image-description">total value trend of all periods</p>
+        </div>
+
+        <div class="module">
+            <img src="{{top_10_img}}" alt="top 10 issuers of latest period" class="module-img">
+            <p class="image-description">top 10 issuers of latest period</p>
+        </div>
+
+        <div class="module">
+            <img src="{{gics_img}}" alt="value by gics tier 3 of latest period" class="module-img">
+            <p class="image-description">value by gics tier 3 of latest period</p>
+        </div>
+
+        <div class="module">
+            <img src="{{percent_img}}" alt="top n issuers value sum percentage" class="module-img">
+            <p class="image-description">top n issuers value sum percentage</p>
+        </div>
+
+        <div class="module">
+            <img src="{{top5_issuer_img}}" alt="top 5 issuers value sum" class="module-img">
+            <p class="image-description">top 5 issuers value sum</p>
+
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <p>Your company contact information goes here.</p>
+    </footer>
+
+    <script src="static/manager.js"></script>
+</body>
+</html>
+
