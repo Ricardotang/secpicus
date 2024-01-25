@@ -20,7 +20,7 @@ info_map = load_all_info()
 def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request}, headers={"Cache-Control": "no-store"})
 
-@app.get("/manager", response_class=HTMLResponse)
+@app.post("/manager", response_class=HTMLResponse)
 async def get_manager(request: Request, manager_name: str):
     is_dict = isinstance(info_map, dict)
     print(is_dict)
@@ -42,7 +42,7 @@ async def get_manager(request: Request, manager_name: str):
         })
 
 
-@app.get("/{id}.html", response_class=HTMLResponse)
+@app.get("/{id}", response_class=HTMLResponse)
 def get_manager(request: Request, id: str):
 
     manager_info = get_manager_by_id(id=id, info_map=info_map)
