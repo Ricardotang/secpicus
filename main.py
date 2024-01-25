@@ -18,7 +18,7 @@ info_map = load_all_info()
 
 @app.get("/", response_class=HTMLResponse)
 def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+    return templates.TemplateResponse("index.html", {"request": request}, headers={"Cache-Control": "no-store"})
 
 @app.get("/manager", response_class=HTMLResponse)
 async def get_manager(request: Request, manager_name: str):
@@ -43,7 +43,7 @@ async def get_manager(request: Request, manager_name: str):
 
 
 @app.get("/{id}.html", response_class=HTMLResponse)
-async def get_manager(request: Request, id: str):
+def get_manager(request: Request, id: str):
 
     manager_info = get_manager_by_id(id=id, info_map=info_map)
     if manager_info is None:
