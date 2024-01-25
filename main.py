@@ -9,6 +9,7 @@ from fastapi.responses import StreamingResponse
 import json
 import uvicorn
 from manager import *
+import logging
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -16,7 +17,7 @@ templates = Jinja2Templates(directory="templates")
 info_map = load_all_info()
 
 
-@app.get("/", response_class=HTMLResponse)
+@app.get("/index", response_class=HTMLResponse)
 def read_root(request: Request):
     return templates.TemplateResponse("index.html", {"request": request}, headers={"Cache-Control": "no-store"})
 
@@ -65,7 +66,8 @@ async def get_manager(request: Request, manager_name: str):
 
 @app.get("/{id}.html", response_class=HTMLResponse)
 def get_manager(request: Request, id: str):
-    print("get manager" + id)
+    logging.error(f"get manager: {id}")
+    
     return FileResponse(f"templates/{id}.html")
     # return templates.TemplateResponse(id+".html", {
     #     "request": request 
