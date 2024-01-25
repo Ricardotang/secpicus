@@ -44,7 +44,7 @@ async def get_manager(request: Request, manager_name: str):
 
 @app.get("/{id}", response_class=HTMLResponse)
 def get_manager(request: Request, id: str):
-
+    print("get manager" + id)
     manager_info = get_manager_by_id(id=id, info_map=info_map)
     if manager_info is None:
         raise HTTPException(status_code=404, detail="Manager not found")
