@@ -52,14 +52,14 @@ async def get_manager(request: Request, id: str):
     return templates.TemplateResponse("manager.html", {
         "request": request, 
         "base_info": manager_info['base_info'],
-        "total_value_img": "static/baillie/total_value_img.png",
+        "total_value_img": manager_info["total_value_img"],
         "top_10_img": manager_info["top_10_img"],
-        "top_10_table": manager_info["top_10_table"],
+        # "top_10_table": manager_info["top_10_table"],
         "gics_img": manager_info["gics_img"],
-        "gics_table": manager_info["gics_table"],
+        # "gics_table": manager_info["gics_table"],
         "percent_img": manager_info["percent_img"],
         "top5_issuer_img": manager_info["top5_issuer_img"],
-        "top5_issuer_table": manager_info["top5_issuer_table"], 
+        # "top5_issuer_table": manager_info["top5_issuer_table"], 
         })
 
 
