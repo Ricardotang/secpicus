@@ -1,5 +1,5 @@
 from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse,FileResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from typing import Union
@@ -66,10 +66,10 @@ async def get_manager(request: Request, manager_name: str):
 @app.get("/{id}.html", response_class=HTMLResponse)
 def get_manager(request: Request, id: str):
     print("get manager" + id)
-  
-    return templates.TemplateResponse(id+".html", {
-        "request": request 
-        })
+    return FileResponse(f"templates/{id}.html")
+    # return templates.TemplateResponse(id+".html", {
+    #     "request": request 
+    #     })
 
 
 if __name__ == "__main__":
