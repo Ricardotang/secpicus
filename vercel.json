@@ -3,6 +3,10 @@
     "rewrites": [{ 
       "source": "/", 
       "destination": "templates/index.html" 
+    },
+    {
+      "source": "/manager/1088875", 
+      "destination": "templates/1088875.html"       
     }
     
     ]
