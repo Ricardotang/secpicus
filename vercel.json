@@ -1,7 +1,12 @@
 {
-    "routes": [
-        { "src": "/(\\d+*)", "dest": "/" },
-        { "src": "/index", "dest": "/index.html" }
-      ]
+
+    "rewrites": [{ 
+      "source": "/index", 
+      "destination": "templates/index.html" },
+      {
+        "source": "/manager/(.*)", 
+        "destination": "templates/manager.html" 
+      }
     
+    ]
 }

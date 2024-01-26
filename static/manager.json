@@ -2,7 +2,7 @@
 "baillie": {
 "id": "1088875",
 "base_info": "baillie base info",
-"total_value_img": "static/baillie/total_value_img.png",
+"total_value_img": "../static/baillie/total_value_img.png",
 "top_10_img": "https://raw.githubusercontent.com/Ricardotang/openmindIA011/main/w4top10_img.png",
 "top_10_table": "static/baillie/top10_table.png",
 "gics_img": "static/baillie/gics_img.png",
@@ -14,13 +14,13 @@
 "1088875": {
     "id": "1088875",
     "base_info": "baillie base info",
-    "total_value_img": "static/1088875/total_value_trend.png",
-    "top_10_img": "static/1088875/top10_issuers_of_latest_period.png",
-    "top_10_table": "static/1088875/top10_table.png",
-    "gics_img": "static/1088875/value_sum_by_gics.png",
-    "gics_table": "static/1088875/gics_table.png",
-    "percent_img": "static/1088875/topn_issuers_value_sum_percent.png",
-    "top5_issuer_img": "static/1088875/top5_issuers_of_all_periods.png",
-    "top5_issuer_table": "static/1088875/top5_issuer_table.png"
+    "total_value_img": "../static/1088875/total_value_trend.png",
+    "top_10_img": "../static/1088875/top10_issuers_of_latest_period.png",
+    "top_10_table": "../static/1088875/top10_table.png",
+    "gics_img": "../static/1088875/value_sum_by_gics.png",
+    "gics_table": "../static/1088875/gics_table.png",
+    "percent_img": "../static/1088875/topn_issuers_value_sum_percent.png",
+    "top5_issuer_img": "../static/1088875/top5_issuers_of_all_periods.png",
+    "top5_issuer_table": "../static/1088875/top5_issuer_table.png"
     }
 }
