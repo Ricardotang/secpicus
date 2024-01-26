@@ -1,8 +1,9 @@
 {
 
     "rewrites": [{ 
-      "source": "/index", 
-      "destination": "templates/index.html" },
+      "source": "/", 
+      "destination": "templates/index.html" 
+    },
       {
         "source": "/manager/(.*)", 
         "destination": "templates/manager.html" 
